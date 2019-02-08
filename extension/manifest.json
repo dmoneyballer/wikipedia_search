@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "Wikipedia search",
+  "author": "Drew",
+  "description": "Template Browser Extension",
+  "homepage_url": "https://github.com/ryanwhocodes/template-browser-extension",
+  "version": "0.0.1",
+  "browser_action": {
+   "default_popup": "popup.html",
+   "default_title": "Template Browser Extension"
+  },
+  "permissions": [
+    "tabs",
+    "webRequest",
+    "<all_urls>"
+  ]
+}
