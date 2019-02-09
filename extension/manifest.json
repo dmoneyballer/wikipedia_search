@@ -1,21 +1,20 @@
 {
   "manifest_version": 2,
   "name": "Wikipedia search",
-  "version": "0.0.0.1",
   "author": "Drew",
   "description": "Template Browser Extension",
   "homepage_url": "https://github.com/dmoneyballer/wikipedia_search",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "icons": {
     "16": "images/wikipedia-logo-16.png",
     "48": "images/wikipedia-logo-48.png",
     "96": "images/wikipedia-logo-96.png",
-    "128": "images/wikipedia-logo.png"
+    "128": "images/wikipedia-logo-128.png"
   },
   "browser_action": {
    "default_popup": "popup.html",
    "default_title": "Template Browser Extension",
-   "default_icon": "images/wikipedia-logo-96.png"
+   "default_icon": "images/wikipedia-logo-128.png"
   },
   "permissions": [
     "webRequest",
