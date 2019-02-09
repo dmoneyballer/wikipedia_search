@@ -7,14 +7,10 @@
   "version": "0.0.1",
   "browser_action": {
    "default_popup": "popup.html",
-   "default_script": "/js/popup.js",
    "default_title": "Template Browser Extension"
   },
   "permissions": [
-    "tabs",
-    "webNavigation",
     "webRequest",
-    "<all_urls>"
-  ],
-  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+    "https://en.wikipedia.org/*"
+  ]
 }

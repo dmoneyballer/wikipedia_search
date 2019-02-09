@@ -1,5 +1,4 @@
 $('#alert').hide()
-// to close the alert
 $("#alert").click(() => {
     $('#alert').hide()
 });
@@ -8,31 +7,24 @@ setTimeout(function() {
     var searchWord = document.querySelector('#searchWord').value;
     console.log(searchWord);
     var results = [];
-
-
     $.ajax({
-              crossDomain: true,
-              header: 'Access-Control-Allow-Origin',
               url:`https://en.wikipedia.org/w/api.php?action=opensearch&format=json&maxlag=5&search=${searchWord}&callback=?`,
               type: 'GET',
-              dataType: 'json',
-              beforeSend: function(xhr){xhr.setRequestHeader('https://en.wikipedia.org', 'https://en.wikipedia.org');},
-              success: (data) => {
+              success: (response) => {
+                const jsonStr = response.slice(5, -1);
+                const data = JSON.parse(jsonStr)
                   $("#output").html("");
                 var i =0;
                 for (var i = 0; i < data[1].length; i++) {
-                  $("#output").append(`<li><a href= "${data[3][i]  } ">${data[1][i] + " " + data[2][i]}<a></li>`);
+                  $("#output").append(`<li><a target="_blank" href= "${data[3][i]  } ">${data[1][i]}</a> ${ data[2][i]}</li>`);
                 }
                 console.log(data);
               },
               error: (err) =>{
                 console.log(err.responseJSON);
               }
-
-
           })
-
-  })
+});
   $("#searchWord").keypress(function (e) {
       if(e.which ==13){
         $("#urlCopyButton").click();
