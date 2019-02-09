@@ -10,3 +10,7 @@ body {
 a {
   color: blue;
 }
+#fineprint {
+  padding: 2px;
+  font-size: 8px;
+}
