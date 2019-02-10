@@ -4,7 +4,7 @@
   "author": "Drew",
   "description": "A wikipedia search tool",
   "homepage_url": "https://github.com/dmoneyballer/wikipedia_search",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "icons": {
     "16": "images/wikipedia-logo-16.png",
     "48": "images/wikipedia-logo-48.png",

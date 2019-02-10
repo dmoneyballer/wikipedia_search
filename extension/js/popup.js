@@ -16,7 +16,7 @@ setTimeout(function() {
                 var i = 0;
                 if (data[1][0]) {
                   for (var i = 0; i < data[1].length; i++) {
-                    $("#output").append(`<li><a target="_blank" href= "${data[3][i]  } ">${data[1][i]}</a> ${ data[2][i]}</li>`);
+                    $("#output").append(`<li><a target="_blank" href= "${data[3][i]} ">${data[1][i]}</a> ${ data[2][i]}</li>`);
                   }
                 } else {
                   $("#output").html("<p>Sorry, your search didn't yield any results</p>")
