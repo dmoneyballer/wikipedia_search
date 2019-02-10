@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Wikipedia search",
   "author": "Drew",
-  "description": "Template Browser Extension",
+  "description": "A wikipedia search tool",
   "homepage_url": "https://github.com/dmoneyballer/wikipedia_search",
   "version": "0.0.2",
   "icons": {
@@ -13,7 +13,7 @@
   },
   "browser_action": {
    "default_popup": "popup.html",
-   "default_title": "Template Browser Extension",
+   "default_title": "Wikipedia Search",
    "default_icon": "images/wikipedia-logo-128.png"
   },
   "permissions": [
